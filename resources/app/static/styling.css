@@ -1,0 +1,180 @@
+body {
+    background-color: white;
+  }
+
+  * {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+
+
+  a {
+    color: rgb(207, 70, 28);
+  }
+
+  b {
+    color: rgb(207, 70, 28);
+  }
+  h1 {
+    color: rgb(207, 70, 28);
+  }
+  
+  h2 {
+    color: rgba(207, 70, 28, 0.904);
+  }
+
+  h3 {
+    color: rgba(207, 70, 28, 0.459);
+  }
+
+  button {
+    background-color: #229154; /* Green */
+    color: black;
+    font-size: 30px;
+    padding: 40px 60px;    
+    border-radius: 12px;
+    border: 5px hidden #4d0ab9; /* Green */
+  }
+
+  button:hover {
+    background-color: #2ed333; /* Green */
+    color: rgb(51, 50, 50);
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+
+  table {
+    border: 1px hidden;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+  }
+
+  tr {
+    border: 1px solid;
+  }
+
+  div.ramka {
+    width: auto;
+    height: 800px;
+    border: 2px hidden black;
+    padding: 20px;
+    margin: 30px;
+  }
+
+
+
+  div.indexKwota {
+    width: auto;
+    height: 200px;
+    border: 2px hidden black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  div.indexTagi {
+    width: auto;
+    height: 50px;
+    border: 2px hidden black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    
+  }
+
+  div.indexTagiKoment {
+    width: auto;
+    height: 150px;
+    border: 2px hidden black;
+    padding: 20px;
+    padding-right: 100px;
+    margin: 20px;
+    
+    text-align: right;
+
+  }
+
+  div.indexSubmit {
+    width: auto;
+    height: 150px;
+    border: 2px hidden black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  div.szukaj {
+    width: auto;
+    height: 100px;
+    border: 2px hidden black;
+    padding: px;
+    padding-right: 0px;
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+
+  div.szukajOpis {
+    width: 45%;
+    height: 50px;
+    border: 2px hidden black;
+    padding: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    float: left;
+  }
+
+  div.szukajDane {
+    width: 45%;
+    height: 50px;
+    border: 2px hidden black;
+    padding: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    float: left;
+  }
+
+
+
+  
+  .tagCheckbox {
+    -webkit-appearance: none;
+    background-color: #0f0fa046;
+    border: 1px hidden #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .tagCheckbox:checked {
+    background-color: #0f0fa0;
+    border: 1px hidden #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+  }
+
+  a.tagText {
+    size: 32px;
+  }
+
+
+  
+
+
+
+
+  div.obiekt1, div.obiekt2, div.obiekt3, div.obiekt4 {
+    width: auto;
+    height: 50px;
+    border: 2px hidden black;
+    padding: 30px;
+    margin: 20px;
+  }
