@@ -12,7 +12,7 @@ RUN venv/bin/pip install gunicorn
 COPY app app
 RUN mkdir db
 #COPY migrations migrations
-COPY run.py config.py boot.sh ./
+COPY run.py boot.sh ./
 RUN chmod +x boot.sh
 
 ENV FLASK_APP run.py
