@@ -7,16 +7,14 @@ import os
 
 ### CONFIG ##################################################
 #
-
-apiBasePath = '/api/app/v1'
-basePath = '/app/v1'
+basePath = '/APP_NAME/v1'
 
 PORT = os.getenv("PORT") or '5000'
 PROTOCOL = os.getenv("PROTOCOL") or 'http'
 HOST = os.getenv("HOST") or 'localhost'
-API_URL = PROTOCOL + '://' + HOST + ':' + PORT + apiBasePath
+
 WEB_URL = PROTOCOL + '://' + HOST + ':' + PORT + basePath
-print('API: ' + API_URL)
+
 print('WEB: ' + WEB_URL)
 print('WELCOME: ' + WEB_URL + '/test')
 

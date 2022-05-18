@@ -13,52 +13,44 @@ except FileExistsError as err:
     print(err)
 
 
-'''
-namesToChange = []
-namesToChange.append(appName +'/' + 'appName')
-namesToChange.append(appName +'/appName.ini')
-#print(namesToChange)
-for elem in namesToChange:
-    src = elem
-    dest = str(elem).replace('appName', appName)
-    rename(src, dest)
 
-filesToChange = []
-filesToChange.append(appName +'/run.py')
-filesToChange.append(appName +'/' + appName + '.ini')
-filesToChange.append(appName +'/Dockerfile')
-filesToChange.append(appName +'/boot.sh')
+filesToChange = [
+    #'run.py',
+    #'app.ini',
+    #'Dockerfile',
+    #'boot.sh',
 
-filesToChange.append(appName + '/' + appName + '/templates/base.html')
-filesToChange.append(appName + '/' + appName + '/__init__.py')
-filesToChange.append(appName + '/' + appName + '/views.py')
+    '/app/templates/test.html',
+    #'/app/__init__.py',
+    '/app/views.py'
+]
+print('Pliki do zmiany zawartosci w folderze ' + appName + ': ' + '\n\t' + str(filesToChange))
 
 for elem in filesToChange:
-    print('Modyfikuje tresc pliku: '+ elem)
-    file = open(elem, 'r')
+    elemPath = appName + '/' + elem
+    #print('Modyfikuje tresc pliku: /'+ elemPath)
+    file = open(elemPath, 'r')
     fileContent = file.read()   
     file.close()
 
-    file = open(elem, 'w')
-    fileContent = fileContent.replace('appName', appName)
-    print('################')
-    print(fileContent)
+    file = open(elemPath, 'w')
+    fileContent = fileContent.replace('APP_NAME', appName)
+    #print('################')
+    #print(fileContent)
     file.write(fileContent)
-    file.close
+    file.close()
 
-
-#print(filesToChange)
-'''
 
 '''
-# zmiana nazwy folderu z aplikacja
-src = appName +'/' + 'appName'
-dest = appName +'/' + appName
-rename(src, dest)
+namesToChange = [
+    #appName + '/app',
+    #appName + '/app.ini'
+]
+print('Elementy do zmiany nazwy: ' + '\n\t' + str(namesToChange))
 
-# zmiana nazwy pliku .ini
-src = appName +'/' + 'appName.ini'
-dest = appName +'/' + appName + '.ini'
-
-rename(src, dest)
+for elem in namesToChange:
+    dest = str(elem).replace('APP_NAME', appName)
+    #print(elem)
+    #print(dest)
+    rename(elem, dest)
 '''
